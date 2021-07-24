@@ -27,11 +27,7 @@
   
   ![image](https://user-images.githubusercontent.com/55281287/126856188-7829e418-0e24-4ca9-a929-939b87ee1b2e.png)
 ## 3.在github托管代码
-用git bash直接创建git托管项目
 
-用git clone +“ssh地址”克隆远程仓库
-
-在各种编辑器里面可以直接进行pull push等管理操作
 
 常见git命令如下
 
@@ -73,6 +69,19 @@ git pull origin master //从远程仓库中拉下新的改动
 
 git clone url // github仓库中的项目克隆到本地， url即为github中克隆的地址
 ```
+## 4.实际使用时遇到的一些常见错误
+
+在一个已经建立了git连接的项目里面需要将原来的git 远程连接删除再重新建立新的远程连接，并将本地仓库的项目推送上去
+```
+$ git remote rm origin
+$ git remote add origin git@github.com:wqwqydyjs/vuemall.git
+$ git branch -M main
+$ git push -u origin main
+
+```
+
+
+
 
 
  
