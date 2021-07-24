@@ -33,6 +33,47 @@
 
 在各种编辑器里面可以直接进行pull push等管理操作
 
+常见git命令如下
+
+```
+git --help //帮助,可以查看git 的各种方法操作
+
+git init //创建一个新的仓库，在当前目录下或生成一个 .git 的子目录， 让当前目录变成git可管理的仓库， 以后所有的文件变化信息都会保存在这个文件下。.git 文件中有一个config文件 可以更改配置。
+
+git status //查看状态，可以知道那些文件发生了变化，那些文件还没有提交到仓库中去等。建议在提交前查看状态，以确认发生变化的文件已经添加至缓存中。
+
+git add * / . //添加当前目录下的多有文件和子目录到缓存中
+git add filename //添加指定文件到缓存中，多个文件一起添加时中间用空格隔开
+git add f* //提交所有以f开头的文件
+
+git commit -m "注释内容" //提交缓存至仓库中，每一次提交git就会为全局代码提供一个commit唯一标识（版本号，就是在产看日志时 最前面的那一串字符串），用户可以通过git reset 回溯到任意一次提交的位置。
+
+git log //查看提交日志 包括每次的版本变化，版本变化对应的commit标识也会改变
+git log --pretty=oneline //提交体质的简介显示方案
+git reflog //获取版本号
+git log --graph //以树形结构查看分枝状态，提交日志
+
+git reset --hard HEAD^^ //回溯到上一次提交
+git reset --hard 版本号 //回溯到指定版本
+
+git diff filename //查看更改前后的区别
+
+git branch //查看分支 git默认有一个主分支master，当多分之时，分支前有*的单表当前所在分支
+git branch branchname //创建分支，branchname为分支名
+git branch -b branchname //创建一个分支，并切换到此分支
+git branch -d branchname //删除分支 注意要在分支所在的主干上进行删除
+git checkout branchname //切换到指定分支
+git checkout - //快速切换到上一个分支
+git merge //合并分支
+
+//将本地库推送至github上，首先要在github创建一个项目
+git remote add origin git@github.com:uesr.name/project.name.git // user.name代表github的用户名，project.name代表在github上创建的项目名称。此步骤为了把本地仓库和远程仓库关联起来，用来首次推送，以后在进行推送时则不需要执行此步骤
+git push -u -origin master //首次推送时输入完整结构，之后的推送输入git push即可
+git pull origin master //从远程仓库中拉下新的改动
+
+git clone url // github仓库中的项目克隆到本地， url即为github中克隆的地址
+```
+
 
  
  
