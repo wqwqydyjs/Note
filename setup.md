@@ -8,14 +8,16 @@ jdk路径上面不应该有中文字符，且安装完成后应该包含如下�
  
 ### 2.配置环境变量
 
-a.用户变量:编辑path路径，新建两条路径
+#### a.用户变量
+
+编辑path路径，新建两条路径
 ```
 %JAVA_HOME%\bin
 ```
 ```
 %JAVA_HOME%\jre\bin
 ```
-b.系统变量
+#### b.系统变量
 
 新建JAVA_HOME变量
 
@@ -38,6 +40,13 @@ CLASSPATH
 ```
 .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
 ```
+### 检测是否安装成功
+
+输入：
+```
+java -version
+```
+直接查看java版本，如果成功则会有版本号出现
 
 
 
