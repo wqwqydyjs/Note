@@ -27,6 +27,9 @@
  ```
  mysql -u root -p
  ```
+ ### 4.Navicat安装及破解教程
+ [完整安装及破解教程](https://www.jb51.net/article/199496.htm)
+
 
 
 
