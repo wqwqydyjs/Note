@@ -9,10 +9,15 @@
 
 ### 2.配置mysql环境变量
 找到mysql server目录下面的bin文件夹路径，如下图所示
+
+
 ![image](https://user-images.githubusercontent.com/55281287/128621566-cbf64a79-caf2-4131-babc-71f23a19b15d.png)
+ 
 在环境变量的path变量中编辑添加上bin文件夹的路径即可
+ 
 ![image](https://user-images.githubusercontent.com/55281287/128621588-6ece82e8-8317-43c6-b17b-71bf058e760c.png)
 ![image](https://user-images.githubusercontent.com/55281287/128621600-c0d356c7-653c-4521-8187-a152a7f2d6be.png)
+ 
 ### 3.检测是否安装成功
 启动mysql：将命令行切换到mysql的bin目录下面输入
 ```
